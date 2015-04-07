@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    android:padding="2dp"
+    android:overScrollMode="ifContentScrolls">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/linearLayout2">
+
+
+            <com.quirquinchosanto.quirquinchosantoapp.LoaderImageView
+                android:id="@+id/loaderImageViewDetailJugador"
+                android:layout_width="120dp"
+                android:layout_height="170dp"
+
+                />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/linearLayout2"
+                android:layout_toEndOf="@+id/linearLayout2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Carlos Emilio Lampe Porras"
+                    android:textSize="18dp"
+                    android:id="@+id/textViewNombre"
+                    android:textColor="#ff5959af"
+                    android:layout_gravity="center_horizontal"
+                    android:elegantTextHeight="false"
+                    android:focusable="false"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Santa Cruz de la Sierra,17 de Marzo de 1987"
+                    android:textSize="13dp"
+                    android:textColor="#ff5959af"
+                    android:id="@+id/textViewNacimiento"
+                    android:layout_gravity="center_horizontal|left"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Posicion: Arquero"
+                    android:id="@+id/textViewPosicion"
+                    android:textSize="13dp"
+                    android:textColor="#ff5959af"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Partidos Disputados : 5"
+                    android:id="@+id/textViewPartidosDisputados"
+                    android:textSize="13dp"
+                    android:textColor="#ff5959af"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Goles Temporada : 3"
+                    android:id="@+id/textViewGolesTemporada"
+                    android:textSize="13dp"
+                    android:textColor="#ff5959af"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Tarjetas amarillas : 2"
+                    android:id="@+id/textViewTarjetasAmarillas"
+                    android:textSize="13dp"
+                    android:textColor="#ff5959af"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Tarjetas rojas : 1"
+                    android:id="@+id/textViewTarjetasRojas"
+                    android:textSize="13dp"
+                    android:textColor="#ff5959af"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    android:padding="2dp"
+    android:overScrollMode="ifContentScrolls">
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/LogoNoticia"
+        android:layout_alignStart="@+id/LogoNoticia">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:weightSum="1"
+            android:id="@+id/linearLayout">
+
+            <ImageView
+                android:id="@+id/EquipoLocalImage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/ic_sanjose"
+                android:visibility="visible"
+             />
+
+            <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:minHeight="?android:listPreferredItemHeight"
+                android:gravity="center_vertical"
+                android:text="EQUIPO LOCAL "
+                android:id="@+id/nombre_equipo_local"
+                android:textColor="#ff5959af"
+                android:textStyle="bold|italic"
+                android:textSize="13dp"
+                android:layout_gravity="center_horizontal">
+            </TextView>
+
+            <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="28dp"
+                android:layout_height="fill_parent"
+                android:minHeight="?android:listPreferredItemHeight"
+                android:gravity="center_vertical"
+                android:text=" 0 "
+                android:id="@+id/result_equipo_local"
+                android:textColor="#ff5959af"
+                android:textAlignment="center"
+                android:textStyle="bold|italic"
+                android:textSize="20dp">
+            </TextView>
+
+            <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:minHeight="?android:listPreferredItemHeight"
+                android:gravity="center_vertical"
+                android:text=" VS "
+                android:id="@+id/vs_text"
+                android:textColor="#ff5959af"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textStyle="bold|italic"
+                android:textSize="12dp">
+            </TextView>
+            <ImageView
+                android:id="@+id/EquipoVisitanteImage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/ic_sanjose"
+                android:visibility="visible"
+                />
+            <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:minHeight="?android:listPreferredItemHeight"
+                android:gravity="center_vertical"
+                android:text="EQUIPO VISITANTE "
+                android:id="@+id/nombre_equipo_visitante"
+                android:textColor="#ff5959af"
+                android:textStyle="bold|italic"
+                android:textSize="13dp"
+                android:layout_weight="0.38">
+            </TextView>
+
+            <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="45dp"
+                android:layout_height="fill_parent"
+                android:minHeight="?android:listPreferredItemHeight"
+                android:gravity="center_vertical"
+                android:text=" 0 "
+                android:id="@+id/result_equipo_visitante"
+                android:textColor="#ff5959af"
+                android:textStyle="bold|italic"
+                android:textSize="20dp">
+            </TextView>
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/LogoNoticia"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/ic_search"
+            android:layout_marginRight="50dp"
+            android:visibility="visible"
+
+            android:layout_gravity="bottom|right"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+    </LinearLayout>
+</RelativeLayout>

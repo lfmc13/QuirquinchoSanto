@@ -1,0 +1,117 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    android:padding="2dp"
+    android:overScrollMode="ifContentScrolls">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/FirstLinearLayoutDetail"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:nestedScrollingEnabled="true">
+
+
+        <com.quirquinchosanto.quirquinchosantoapp.LoaderImageView
+            android:id="@+id/loaderImageViewDetail"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="50dp"
+            image="@mipmap/ic_quirquincho"
+            />
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                >
+
+
+                <ImageView
+                    android:id="@+id/LogoNoticiaDetail"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/ic_quirquincho"
+                    android:visibility="visible"
+
+                    android:layout_gravity="bottom" />
+
+                <TextView
+                    android:id="@+id/Fecha_noticiaDetail"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="1dp"
+                    android:text="Fecha noticia"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:textColor="#ff290bc4"
+                    android:textSize="3pt"
+                    android:layout_gravity="top" />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/TituloNoticiaDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Titulo Noticia"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+
+                android:layout_centerHorizontal="true"
+                android:textColor="#ff290bc4"
+                android:layout_gravity="center_vertical" />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/TextoNoticiaLayoutDetail"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Texto de ejemplo de noticia"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginTop="3dp"
+                android:textSize="7pt"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="#ff290bc4"
+                android:scrollbars="vertical"
+                android:layout_gravity="top"
+                android:textAlignment="inherit" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</ScrollView>
